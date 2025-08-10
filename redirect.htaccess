@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Chuyển hướng từ trang admin
+RewriteCond %{REQUEST_URI} ^/Admin_Page/index\.php$
+RewriteRule ^.*$ https://minhtanwebpage.id.vn/login.php [R=301,L]
